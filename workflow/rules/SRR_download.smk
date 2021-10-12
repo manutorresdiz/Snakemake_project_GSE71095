@@ -5,8 +5,8 @@ rule SRR_download:
 	output:
 		expand("files/fastq_files/{{unit}}_{run}.fastq.gz",run=[1,2])
 	conda:
-      "workflow/envs/SraTools.yaml"
-  resources:
+		"workflow/envs/SraTools.yaml"
+	resources:
 		cpu=1,
 		mem=lambda wildcards, attempt: attempt * 4
 	shell:
