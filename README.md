@@ -6,3 +6,9 @@ The different steps involve:
 * Align to Hg38
 * Differential splicing analysis using both Majiq and rMATS
 * Differential expression analysis using Salmon and limma
+
+
+## Run as:
+```
+snakemake -s workflow/snakemake.smk --profile slurm -p --restart-times 3 --use-conda --dryrun
+```
