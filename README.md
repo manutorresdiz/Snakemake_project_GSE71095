@@ -8,7 +8,7 @@ The different steps involve:
 * Differential expression analysis using Salmon and limma
 
 
-## Run as:
+### Run as:
 ```
 snakemake -s workflow/snakemake.smk --profile slurm -p --restart-times 3 --use-conda --dryrun
 ```
